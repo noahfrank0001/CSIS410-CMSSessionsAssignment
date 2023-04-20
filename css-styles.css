@@ -1,0 +1,109 @@
+body { /* defines the padding for the body */
+	padding: 15px;
+}
+.nav-bar { /* creates the class that styles the nav-bar */
+	padding: 20px;
+	background-color: seagreen;
+}
+.link-bar { /* creates the class that styles the link-bar */
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 20px;
+	background-color: skyblue;
+}
+.nav-item { /* creates the class that styles the items in the nav-bar */
+	padding: 10px;
+}
+.color-red { /* this creates a class that turns text red */ 
+	color: red;
+}
+#footer { /* this styles the footer so that it is present at the bottom of the screen */ 
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+p.confined-width {
+	width: 600px;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+footer.footerdiv {
+	display: flex;
+	align-content: baseline;
+}
+div.totalProduct {
+	padding: 15px;
+	margin-bottom: 10px;
+	border-style: solid;
+	border-width: 3px;
+	border-color: lightgray;
+}
+
+div.product {
+	display: flex;
+	align-items: flex-start;
+}
+
+div.productImage {
+	padding: 15px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: gray;
+}
+
+div.productInfo {
+	margin-left: 10px;
+}
+
+div.storeMenu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+div.cart {
+	display: flex;
+	justify-content: center;
+}
+
+div.emptyCart {
+	display: flex;
+	align-items: flex-end;
+	padding-right: 15px;
+}
+
+div.contact {
+	display: flex;
+	align-items: flex-end;
+	padding-right: 15px;
+}
+
+div.prodDescript {
+	width: 400px;
+}
+
+div.twitter {
+	display: flex;
+	align-content: center;
+	padding-bottom: 10px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- this specifies that the language in the document is english -->
+<head>
+	<!-- These are the meta tags so the webpage can be identified by a search engine -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- This links to the CSS stylesheet -->
+	<link rel="stylesheet" type="text/css" href="css-styles.css">
+	<!-- This is the webpages title -->
+	<title>Forms</title>
+</head>
+<body>
+	<div class="storeMenu">
+		<h1>Gaming Hardware Plus</h1> 
+		<div class="cart">
+			<div class="emptyCart">
+				<a href=''>Empty Cart</a>				
+			</div>
+			<a href=""><img src="shoppingCart.png" width="50"><br>
+			Checkout</a>
+		</div>
+	</div>
+	<!-- This nav bar is for navigating between the home, about us, php configuration, and contact pages -->
+	<nav class="nav-bar">
+		<a href="index.html" class="nav-item">Home</a>
+		<a href="aboutus.php" class="nav-item">About Us</a>
+		<a href="configuration.php" class="nav-item">PHP Configuration</a>
+		<a href="contactus.php" class="nav-item">Contact</a>
+	</nav>
+	<!-- This link bar is for navigating between the 8 assignments submitted throughout the course -->
+	<div class="link-bar">
+		<a href="foundations.php" class="nav-item">Module 1: Week 1 Foundations</a>
+		<a href="variables.php" class="nav-item">Module 1: Week 1 Variables</a>
+		<a href="forms.php" class="nav-item">Module 2: Week 2 Forms</a>
+		<a href="arrays.php" class="nav-item">Module 3: Week 3 Arrays</a>
+		<a href="sessions.php" class="nav-item">Module 4: Week 4 Sessions</a>
+		<a href="cms_sessions.php" class="nav-item">Module 5: Week 5 CMS Sessions</a>
+		<a href="database.php" class="nav-item">Module 6: Week 6 Database</a>
+		<a href="cms_database.php" class="nav-item">Module 8: Week 8 CMS Database</a>
+	</div>
+	<br>
+	<h1>Employee Selection</h1>
+
+	<div class="twitter">
+		<a href="https://twitter.com/?lang=en" target="_blank">
+			<img src="twitter.png" width="40">
+		</a>
+	</div>
+
+	<a href='{$row['productName']}'>
+						<div class='totalProduct'>
+							<div class='product'> 
+								<div class='productImage'>
+									<img src='{$row['productImg']}' height='100'>
+								</div> 
+								<div class='productInfo'>
+									{$row['productName']} <br>
+									{$row['productPrice']}
+								</div> 
+								</a>
+								<form action=''>
+									<select name='quan' id='quan'>
+										<option value='1'>1</option>
+										<option value='2'>2</option>
+										<option value='3'>3</option>
+										<option value='4'>4</option>
+										<option value='5'>5</option>
+									</select>
+									<input type='hidden' name='pID' id='pID' value='{$row['productid']}' >
+									<input type='submit' value='Add To Cart'>
+								</form>
+							</div>
+						</div>
+	
+	<br>
+	<footer id="footer">
+		<!-- This shows when the page was last modified -->
+		<?php echo "Page last changed: ".date("F d Y H:i:s.", filemtime("changelog.txt")); ?>
+		<!-- This displays the validation icons for the webpage -->
+		<div class="footerdiv">
+			<img src="https://www.w3.org/Icons/valid-html401-blue">
+			<img src="https://www.w3.org/Icons/valid-css-blue">
+			<button onclick="<?php session_destroy(); ?>">Log Out</button> 
+		</div>
+	</footer>
+</body>
+</html>
